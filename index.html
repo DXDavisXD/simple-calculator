@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="buttons">
+            <button onclick="clearDisplay()" id="clear">AC</button>
+            <button onclick="displayAppendB()">()</button>
+            <button onclick="percent()">%</button>
+            <button onclick="displayAppend('+')" class="operator">+</button>
+            <button onclick="displayAppend('7')">7</button>
+            <button onclick="displayAppend('8')">8</button>
+            <button onclick="displayAppend('9')">9</button>
+            <button onclick="displayAppend('-')" class="operator">-</button>
+            <button onclick="displayAppend('4')">4</button>
+            <button onclick="displayAppend('5')">5</button>
+            <button onclick="displayAppend('6')">6</button>
+            <button onclick="displayAppend('*')" class="operator">*</button>
+            <button onclick="displayAppend('1')">1</button>
+            <button onclick="displayAppend('2')">2</button>
+            <button onclick="displayAppend('3')">3</button>
+            <button onclick="displayAppend('/')" class="operator">/</button>
+            <button onclick="displayAppend('0')">0</button>
+            <button onclick="displayAppend('.')">.</button>
+            <button onclick="backSpace()" id="back"><</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
